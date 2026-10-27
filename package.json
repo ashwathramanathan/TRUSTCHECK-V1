@@ -1,0 +1,16 @@
+{
+  "name": "trustcheck",
+  "version": "1.0.0",
+  "description": "TrustCheck — verify internship offers, companies and certificates before you trust them.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test",
+    "demo-data": "node scripts/demo-data.js",
+    "demo-data:clear": "node scripts/demo-data.js --clear"
+  },
+  "engines": { "node": ">=18" },
+  "license": "MIT",
+  "private": true
+}

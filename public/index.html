@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrustCheck — Verify before you trust</title>
+  <meta name="description" content="TrustCheck helps students check whether internship offers, companies and certificates look legitimate or potentially fraudulent.">
+  <meta name="theme-color" content="#090912">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="logo" href="#/" aria-label="TrustCheck home">
+        <span class="logo__mark"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.500 8.500-7 10-3.500-1.500-7-5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <span>Trust<b>Check</b></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+      <nav class="nav__links" id="navLinks" aria-label="Main">
+        <a href="#/" data-route="/">Home</a>
+        <a href="#/community" data-route="/community">Community Reports</a>
+        <a href="#/about" data-route="/about">How it works</a>
+        <a class="btn btn--danger btn--sm" href="#/report" data-route="/report">Report a scam</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p><strong>TrustCheck</strong> — Fake internships? Fake certifications? No more after us.</p>
+        <p>Automated checks can be wrong. Always confirm offers on the official website.</p>
+      </div>
+      <div>
+        <p>Built by Yashvardhan Singh, Mahim Chakraborty &amp; Ashwath Ramanathan</p>
+        <p>College project prototype</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:24px;text-align:center">TrustCheck needs JavaScript to run.</p></noscript>
+  <script type="module" src="/js/app.js"></script>
+</body>
+</html>
